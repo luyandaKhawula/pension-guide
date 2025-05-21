@@ -22,6 +22,42 @@ body, html {
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+.navbar a:hover {
+  color:#207019;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.navbar a.active{
+  color:#207019;
+  text-decoration: underline;
+}
+.navbar .icon {
+  color: #111;
+  font-size: 40px;
+  display: none;;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
 .logo img {
   height: 100px;
@@ -78,6 +114,10 @@ body, html {
   z-index: 1;
   max-width: 700px;
   margin-left: -200px;
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0px;
+  }
 }
 .hero-content h1 {
   font-size: 60px;
@@ -268,17 +308,32 @@ body, html {
   gap: 2rem;
   flex-direction: row;
   align-items: left;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 550px;
+  }
 }
 
 .contact-form {
   width: 600px;
   text-align: center;
   margin-right: 100px;
+
+  @media screen and (max-width: 600px) {
+    width: 550px;
+  }
+
+  
 }
 .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: left;
+
+  @media screen and (max-width: 600px) {
+    width: 550px;
+  }
 }
 checkbox {
   margin-bottom: 1rem;
@@ -290,11 +345,16 @@ checkbox {
 .contact-form textarea {
   font-family:  'Arial', sans-serif;
   width: 100%;
+  
   padding: 0.8rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+
+  @media screen and (max-width: 600px) {
+    width: 550px;
+  }
 }
 
 .contact-form textarea {

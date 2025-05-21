@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pension Guide</title>
   <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="navbar">
     <div class="logo">
       <img src="images/logo.png" alt="Pension Guide Logo">
     </div>
-        <nav class="nav-links">
+        <nav class="nav-links" id = "navbar">
         <a href="home.html">Home</a>
         <a href="#guidance-section">About</a>
         <a href="#retirement-section">Products</a>
@@ -24,6 +26,9 @@
         </div>
         <a href="#contact-section" class="contact-btn"><strong>Contact</strong></a>
         </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   </header>
 
   <section class="hero">
