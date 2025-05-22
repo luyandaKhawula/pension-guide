@@ -17,7 +17,8 @@ body, html {
   align-items: center;
   padding: 1rem 3rem;
   background: white;
-  position:sticky;
+  position:fixed;
+  width: 100%;
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
